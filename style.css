@@ -1,0 +1,200 @@
+@font-face {
+    font-family: ananda;
+    src: url("./Ananda.ttf");
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: ananda;
+    color: #5F4B8BFF;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    position: relative;
+    overflow: hidden;
+}
+#page{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #E69A8DFF;
+}
+#page1{
+    height: 100vh;
+    width: 100vw;
+    background-color: #E69A8DFF;
+}
+#page2{
+    height: 100vh;
+    width: 100vw;
+    background-color: #E69A8DFF;
+}
+#page3{
+    height: 100vh;
+    width: 100vw;
+    background-color: #E69A8DFF;
+}
+canvas{
+    position: relative;
+    z-index: 9;
+    max-height: 100vh;
+    max-height: 100vw;
+}
+
+#loop{
+    position: absolute;
+    top: 30%;
+    height: 25%;
+    width: 100%;
+    white-space: nowrap;
+    font-family: ananda;
+    display: flex;
+}
+#loop>h1{
+    font-size: 150px;
+    /* font-weight: lighter; */
+    font-weight: lighter;
+    animation-name: anim;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#loop>h1>span,#loop>h1>span>i{
+    -webkit-text-stroke: 1.5px #5F4B8BFF;
+    color: transparent;
+    font-weight: 500;
+}
+
+#nav{
+    height: 7%;
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0% 3%;
+}
+
+#nav>h3{
+    font-weight: 400;
+    font-family: ananda;
+    font-size: 30px;
+}
+
+#nav>button{
+    padding: 10px 20px;
+    border-radius: 50px;
+    /* background-color: #5F4B8BFF; */
+    /* color: #E69A8DFF; */
+    background-color: #E3E4E4;
+    color: #5F4B8BFF;
+    border: none;
+}
+
+#page>h3{
+    position: absolute;
+    top: 55%;
+    font-family: ananda;
+    font-weight: 400;
+    color: #7c7c7c;
+    left: 5%;
+}
+
+#page>h4{
+    position: absolute;
+    top: 62%;
+    left: 25%;
+    font-family: ananda;
+    font-weight: 500;
+}
+
+/* ------------------------------------------------------------------------------------------------- */
+
+#page1>#right-text{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+}
+#page1>#right-text>h3{
+    font-weight: 400;
+    color: #7c7c7c;
+}
+#page1>#right-text>h1{
+    line-height: 1.5;
+    font-size: 50px;
+}
+#page1>#left-text{
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    text-align: end;
+}
+#page1>#left-text>h1{
+    font-size: 50px;
+    line-height: 1.5;
+}
+#page1>#left-text>h3{
+    color: #7c7c7c;
+    font-weight: 400;
+}
+
+/* ------------------------------------------------------------------------------------------------- */
+
+#page2>#text1{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+}
+#page2>#text1>h3{
+    color: #7c7c7c;
+    font-weight: 400;
+}
+#page2>#text1>h1{
+    font-size: 60px;
+    line-height: 1.5;
+}
+#page2>#text2{
+    position: absolute;
+    top: 55%;
+    right: 10%;
+    text-align: end;
+}
+#page2>#text2>p{
+    color: #7c7c7c;
+    font-weight: 400;
+}
+
+/* ------------------------------------------------------------------------------------------------- */
+
+#page3>#text3{
+    position: absolute;
+    top: 40%;
+    right: 10%;
+    text-align: end;
+}
+#page3>#text3>h3{
+    color: #7c7c7c;
+    font-weight: 400;
+}
+#page3>#text3>h1{
+    font-size: 70px;
+
+}
+
+/* ------------------------------------------------------------------------------------------------- */
+
+@keyframes anim {
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
