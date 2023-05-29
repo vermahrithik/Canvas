@@ -17,6 +17,7 @@ html,body{
 #main{
     position: relative;
     overflow: hidden;
+    background-color: #E69A8DFF;
 }
 #page{
     position: relative;
